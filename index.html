@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Home - Tu Prestamo</title>
+</head>
+<body>
+    <section class="titulo">
+    <h1>Tu Prestamo</h1>
+    </section>
+    <main class="prestamo">
+        <h2>Solicita tu prestamo aca!</h2>
+       <form class="formu">
+        <label for="name">Monto a Solicitar</label>
+        <input type="text" name="name" class="enter" >
+        <label for="cuotas">Cuotas a pagar</label>
+        <input type="text" name="cuotas" class="enter">
+        <label for="interes">Interes</label>
+        <input type="text" name="interes" class="enter">
+        <label for="pagoMes">Pago por mes: </label>
+        <input type="text" name="pagoMes" class="enter" >
+        <label for="pagoTotal">Total a pagar: </label>
+        <input type="text" name="pagoTotal" class="enter">
+       </form>
+       <button id="btnCalculate"> Calcular Prestamo</button>
+       <button id="btnReset">Resetear</button>
+    </main>
+ 
+    <script src="logica.js"></script>
+</body>
+</html>
