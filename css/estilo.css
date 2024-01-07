@@ -34,6 +34,9 @@ body{
     text-transform: uppercase;
     margin-bottom: 15px;
 }
+form .formularioGrupo{
+    margin-bottom: 10px;
+}
 form label{
     display: block;
     margin: 0 auto;
@@ -42,14 +45,42 @@ form .enter{
     width: 100%;
     font-size: 1rem;
     padding: 5px 10px;
-    margin-bottom: 10px;
     text-align: end;
+}
+form .textError{
+    text-align: center;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #222222bd;
+}
+.textOff{
+    display: none;
+}
+.borderBien{
+    background: green;
+}
+.borderMal{
+    background: red;
 }
 main button{
     display: block;
     padding: 10px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
     font-size: 1rem;
     background: #62cbdd;
     border: none;
+}
+.forBien{
+    background: green;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.forMal{
+    background: red;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
 }

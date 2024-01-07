@@ -15,21 +15,37 @@
     <main class="prestamo">
         <h2>Solicita tu prestamo aca!</h2>
        <form class="formu">
-        <label >Monto a Solicitar</label>
-        <input type="text" name="name" class="enter" >
-        <label >Cuotas a pagar</label>
-        <input type="text" name="cuotas" class="enter">
-        <label >Interes</label>
-        <input type="text" name="interes" class="enter">
-        <label >Pago por mes: </label>
-        <input type="text" name="pagoMes" class="enter" >
-        <label >Total a pagar: </label>
-        <input type="text" name="pagoTotal" class="enter">
+        <div class="formularioGrupo" id="grupocapital">
+            <label for="capital" >Monto a Solicitar</label>
+            <input type="text" name="capital" class="enter user " id="capital">
+            <p class="textError textOff">Solo se permiten numeros!</p>
+        </div>
+        <div class="formularioGrupo" id="grupocuotas">
+            <label for="cuotas">Cuotas a pagar</label>
+            <input type="text" name="cuotas" class="enter user " id="cuotas">
+            <p class="textError textOff">Solo se permiten numeros!</p>
+        </div>  
+        <div class="formularioGrupo" id="grupointeres">
+            <label for="interes">Interes</label>
+            <input type="text" name="interes" class="enter user" id="interes">
+            <p class="textError textOff">Solo se permiten numeros!</p>
+        </div>
+        <div class="formularioGrupo">
+            <label for="pagoMes">Pago por mes: </label>
+            <input type="text" name="pagoMes" class="enter back"  id="pagoMes">
+        </div>
+        <div class="formularioGrupo">
+            <label for="pagoTotal">Total a pagar: </label>
+            <input type="text" name="pagoTotal" class="enter back" id="pagoTotal" readonly="true">
+        </div>
        </form>
+       <p class="forBien textOff" id="forBien">Rellenaste el formulario con exito!</p>
+       <p class="forMal textOff" id="forMal">Por favor rellena bien el formulario</p>
+
        <button id="btnCalculate"> Calcular Prestamo</button>
        <button id="btnReset">Resetear</button>
     </main>
  
-    <script src="logica.js"></script>
+    <script src="ui.js"></script>
 </body>
 </html>
